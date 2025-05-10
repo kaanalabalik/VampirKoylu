@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_role_card"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_margin="8dp">
+
+    <!-- Rol İkonu -->
+    <ImageView
+        android:id="@+id/imgRoleIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/vampir_background"
+        android:tint="@color/purple"
+        android:layout_gravity="center" />
+
+    <!-- Rol İsmi -->
+    <TextView
+        android:id="@+id/tvRoleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vampir"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- Sayı ve Butonlar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Azalt Butonu -->
+        <Button
+            android:id="@+id/tvDecrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/bg_button_circle"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:padding="0dp" />
+
+        <!-- Seçilen Sayı -->
+        <TextView
+            android:id="@+id/tvRoleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+        <!-- Arttır Butonu -->
+        <Button
+            android:id="@+id/tvIncrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/bg_button_circle"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:padding="0dp" />
+    </LinearLayout>
+</LinearLayout>

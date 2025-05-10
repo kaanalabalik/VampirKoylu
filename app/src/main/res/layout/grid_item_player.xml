@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <!-- Avatar Görseli -->
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_avatar"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background" />
+
+    <!-- Oyuncu İsmi -->
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Player Name"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_gravity="center" />
+</LinearLayout>

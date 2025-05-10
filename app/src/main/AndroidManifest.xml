@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kaanalabalik.vampirkoylu">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.VampirKoylu"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:label="Vampir Köylü Oyunu">
+
+        <!-- Ana Menü -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RoleSelectionActivity" />
+
+        <!-- Oyuncuların isimlerini girdiği ekran -->
+        <activity android:name=".PlayerEntryActivity"
+            android:exported="true"/>
+
+        <!-- Roller gösterilecek ekran -->
+        <activity android:name=".RoleActivity"
+            android:exported="true"/>
+
+        <!-- Oyun başlıyor ekranı -->
+        <activity android:name=".GameActivity"
+            android:exported="true"/>
+        <activity android:name=".NightActivity" />
+
+
+    </application>
+
+</manifest>
